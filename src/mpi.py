@@ -14,7 +14,7 @@ def mpi_calculation():
 
     for i in range(1000000000 // size):
         n = (n + 1) % 1000
-        s += n * i
+        s += n 
 
     # Reduce the sums from all processes
     total_sum = comm.reduce(s, op=MPI.SUM, root=0)

@@ -8,7 +8,7 @@ def non_mpi_calculation():
 
     for i in range(1000000000):
         n = (n + 1) % 1000
-        s += n * i
+        s += n 
 
     end_time = time.time()
     print(f'Total sum without MPI: {s}')
